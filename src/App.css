@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  position: absolute;
+  top: 0%;
+  margin: 0 auto;
+  margin-top: 0;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+  background: seashell;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: seashell;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+table thead tr {
+  background-color: #f3f3f320;
+  border-bottom: 1px solid #dddddd;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f380;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;  
+  gap: 0.4rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+
+tbody td, thead th {
+  /* width: 100 / var(--col-num); */
+  flex: 1;
+  word-break: break-all;
+}
+
+table > .right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.container > input {
+  outline: none;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  /* background-color: #f3f3f380; */
+  background-color: #f3f3f380;
+  font-size: 1.5rem;
+  height: 2.5rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: seashell;
+  align-items: flex-start;
+}
+
+table tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+table tr > .right {
+  margin-left: auto;
+  text-align: right;
+}
+
+.container > button {
+  background-color:#f3f3f380;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.container > button:hover, .container > button:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.container > button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+input:hover, input:focus {
+  outline: none;
+}
+
+.book-title-text {
+  font-size: 2.7rem;
+}
