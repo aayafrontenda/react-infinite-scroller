@@ -16,7 +16,7 @@ export const useBookSearch = (query, pageNumber, isSubmitted, setIsSubmitted) =>
     let cancel;
     axios({
       method: 'GET',
-      url: 'http://openlibrary.org/search.json',
+      url: 'https://openlibrary.org/search.json',
       params: { q: query, page: pageNumber },
       cancelToken: new axios.CancelToken(c => (cancel = c))
     })
